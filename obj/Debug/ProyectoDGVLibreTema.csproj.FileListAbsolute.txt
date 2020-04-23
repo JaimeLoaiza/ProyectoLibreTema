@@ -1,0 +1,9 @@
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\bin\Debug\ProyectoDGVLibreTema.exe.config
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\bin\Debug\ProyectoDGVLibreTema.exe
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\bin\Debug\ProyectoDGVLibreTema.pdb
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.csprojAssemblyReference.cache
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.Form1.resources
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.Properties.Resources.resources
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.csproj.GenerateResource.cache
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.exe
+C:\Users\Familia Loaiza\source\repos\ProyectoDGVLibreTema\obj\Debug\ProyectoDGVLibreTema.pdb
