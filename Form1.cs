@@ -12,7 +12,6 @@ namespace ProyectoDGVLibreTema
 {
     public partial class Form1 : Form
     {
-        int i = 1;
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +26,8 @@ namespace ProyectoDGVLibreTema
         }
         public void limpiar()
         {
+            btnmodificar.Enabled = false;
+            btneliminar.Enabled = false;
             txtnombre.Clear();
             txtapellido.Clear();
             txtedad.Clear();
@@ -39,9 +40,9 @@ namespace ProyectoDGVLibreTema
         private void btnguardar_Click(object sender, EventArgs e)
         {
             guardar();
+            dgvlista.Rows.Add();
             limpiar();
             txtnombre.Focus();
-            i = i + 1;
         }
         private void btnsalir_Click(object sender, EventArgs e)
         {

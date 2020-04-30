@@ -46,7 +46,7 @@
             this.txtdireccion = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.dgvlista = new System.Windows.Forms.DataGridView();
-            this.btnguardar = new System.Windows.Forms.Button();
+            this.btnagregarguardar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
@@ -208,17 +208,17 @@
             this.dgvlista.Size = new System.Drawing.Size(374, 319);
             this.dgvlista.TabIndex = 17;
             // 
-            // btnguardar
+            // btnagregarguardar
             // 
-            this.btnguardar.BackColor = System.Drawing.Color.Bisque;
-            this.btnguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnguardar.Location = new System.Drawing.Point(91, 412);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(119, 37);
-            this.btnguardar.TabIndex = 18;
-            this.btnguardar.Text = "GUARDAR";
-            this.btnguardar.UseVisualStyleBackColor = false;
-            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
+            this.btnagregarguardar.BackColor = System.Drawing.Color.Bisque;
+            this.btnagregarguardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnagregarguardar.Location = new System.Drawing.Point(91, 412);
+            this.btnagregarguardar.Name = "btnagregarguardar";
+            this.btnagregarguardar.Size = new System.Drawing.Size(119, 37);
+            this.btnagregarguardar.TabIndex = 18;
+            this.btnagregarguardar.Text = "AGREGAR O GUARDAR";
+            this.btnagregarguardar.UseVisualStyleBackColor = false;
+            this.btnagregarguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btnnuevo
             // 
@@ -274,7 +274,7 @@
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnnuevo);
-            this.Controls.Add(this.btnguardar);
+            this.Controls.Add(this.btnagregarguardar);
             this.Controls.Add(this.dgvlista);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtdireccion);
@@ -321,7 +321,7 @@
         private System.Windows.Forms.TextBox txtdireccion;
         private System.Windows.Forms.TextBox txttelefono;
         private System.Windows.Forms.DataGridView dgvlista;
-        private System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.Button btnagregarguardar;
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.Button btneliminar;
