@@ -16,6 +16,7 @@ namespace ProyectoDGVLibreTema
         {
             InitializeComponent();
         }
+        int posicion;
         List<Ciudadano> ListadgvCiudadano = new List<Ciudadano>();
         public void guardar()
         {
@@ -40,13 +41,59 @@ namespace ProyectoDGVLibreTema
         private void btnguardar_Click(object sender, EventArgs e)
         {
             guardar();
-            dgvlista.Rows.Add();
             limpiar();
             txtnombre.Focus();
         }
         private void btnsalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        private void btnnuevo_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            btnagregarguardar.Enabled = true;
+            txtnombre.Focus();
+        }
+        private void btnmodificar_Click(object sender, EventArgs e)
+        {
+            string nombre, apellido, pais, ciudad, barrio, direccion;
+            int edad, telefono;
+            nombre = txtnombre.Text;
+            apellido = txtapellido.Text;
+            edad = int.Parse(txtedad.Text);
+            pais = txtpais.Text;
+            ciudad = txtciudad.Text;
+            barrio = txtbarrio.Text;
+            direccion = txtdireccion.Text;
+            telefono = int.Parse(txttelefono.Text);
+            dgvlista[0, posicion].Value = txtnombre.Text;
+            dgvlista[1, posicion].Value = txtapellido.Text;
+            dgvlista[2, posicion].Value = txtedad.Text;
+            dgvlista[3, posicion].Value = txtpais.Text;
+            dgvlista[4, posicion].Value = txtciudad.Text;
+            dgvlista[5, posicion].Value = txtbarrio.Text;
+            dgvlista[6, posicion].Value = txtdireccion.Text;
+            dgvlista[7, posicion].Value = txttelefono.Text;
+            limpiar();
+        }
+        private void dgvlista_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            posicion = dgvlista.CurrentRow.Index;
+            txtnombre.Text = dgvlista[0, posicion].Value.ToString();
+            txtapellido.Text = dgvlista[1, posicion].Value.ToString();
+            txtedad.Text = dgvlista[2, posicion].Value.ToString();
+            txtpais.Text = dgvlista[3, posicion].Value.ToString();
+            txtciudad.Text = dgvlista[4, posicion].Value.ToString();
+            txtbarrio.Text = dgvlista[5, posicion].Value.ToString();
+            txtdireccion.Text = dgvlista[6, posicion].Value.ToString();
+            txttelefono.Text = dgvlista[7, posicion].Value.ToString();
+            btnagregarguardar.Enabled = false;
+            btnmodificar.Enabled = true;
+            btneliminar.Enabled = true;
+        }
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            dgvlista.Rows.RemoveAt(posicion);
         }
     }
 }

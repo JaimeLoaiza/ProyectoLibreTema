@@ -207,6 +207,7 @@
             this.dgvlista.Name = "dgvlista";
             this.dgvlista.Size = new System.Drawing.Size(374, 319);
             this.dgvlista.TabIndex = 17;
+            this.dgvlista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvlista_CellClick);
             // 
             // btnagregarguardar
             // 
@@ -230,6 +231,7 @@
             this.btnnuevo.TabIndex = 19;
             this.btnnuevo.Text = "NUEVO";
             this.btnnuevo.UseVisualStyleBackColor = false;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
             // btnmodificar
             // 
@@ -241,6 +243,7 @@
             this.btnmodificar.TabIndex = 20;
             this.btnmodificar.Text = "MODIFICAR";
             this.btnmodificar.UseVisualStyleBackColor = false;
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // btneliminar
             // 
@@ -252,6 +255,7 @@
             this.btneliminar.TabIndex = 21;
             this.btneliminar.Text = "ELIMINAR";
             this.btneliminar.UseVisualStyleBackColor = false;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnsalir
             // 
